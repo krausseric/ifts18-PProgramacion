@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Edad de los Clientes{% endblock %}
+
+{% block page_content %}
+<body>
+<div>
+  <h2>Clientes de Conesa Inc.</h2>
+  <p></p>            
+  <table class="table">
+    <thead>
+      <tr>
+    {% for campo in encabezado_csv %}
+        <th>{{campo}}</th>
+    {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for campo in resultado%}
+      <tr>
+      {% for valor in campo %}
+      <td>{{valor}}</td>
+      {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+</div>
+</body>
+{% endblock %}

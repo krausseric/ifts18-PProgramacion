@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Consulta Edad{% endblock %}
+
+{% block page_content %}
+
+<style>
+h2 { 
+  font-size: 17px;
+  color: #FE2E2E;
+}
+</style>
+
+
+<div class="page-header">
+    <h1>Buscar clientes por un rango de edad determinado:</h1>
+    <h2>La busqueda no acepta valores en negativo o en cero (0).</h2>
+    {{ wtf.quick_form(formedad) }}
+</div>
+{% endblock %}

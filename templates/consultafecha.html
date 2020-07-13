@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Consultas{% endblock %}
+
+{% block page_content %}
+
+<style>
+h2 { 
+  font-size: 17px;
+  color: #FE2E2E;
+}
+</style>
+
+<div class="page-header">
+    <h1>Buscar clientes por:</h1>
+    <h2>La busqueda permita filtar por año, año/mes o año/mes/día.</h2>
+    <h2>Ejemplos:</h2>
+    <h2>         - Año: Formato (AAAA) - 2012.</h2>
+    <h2>         - Año y Mes: Formato (AAAA-MM) - 2012-01.</h2>
+    <h2>         - Año, Mes y Día: Formato (AAAA-MM-DD) - 2012-01-01.</h2>
+    {{ wtf.quick_form(formfecha) }}
+</div>
+{% endblock %}

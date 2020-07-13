@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Consultas{% endblock %}
+
+{% block page_content %}
+
+<style>
+h2 { 
+  font-size: 17px;
+  color: #FE2E2E;
+}
+</style>
+
+<div class="page-header">
+    <h1>Buscar clientes por:</h1>
+    <h2>El buscador permite filtar por el pais ingresado, como asi tambien hacer busquedas parciales.</h2>
+    <h2>Ejemplo:</h2>
+    <h2>Si ingresamos Argentina o argenitna, busca Argentina. >
+    <h2>Si ingresamos Ar, busca Argentina, Argelia. >
+    {{ wtf.quick_form(form) }}
+</div>
+{% endblock %}
