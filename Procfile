@@ -1,1 +1,1 @@
-web: ifts-verogelato app:app
+web: ifts-verogelato app:app.server
