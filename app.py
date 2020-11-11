@@ -14,6 +14,7 @@ if __name__="__name__":
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
+server = app.server
 
 app.config['SECRET_KEY'] = 'un string que funcione como llave'
 

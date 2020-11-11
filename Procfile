@@ -1,1 +1,1 @@
-web: ifts-verogelato app:app.server
+web: gunicorn app:app
