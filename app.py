@@ -62,7 +62,7 @@ def error_interno(e):
 
 @app.route('/')
 def index():
-    return render_template('index.html', fecha_actual=datetime.utcnow())
+    return render_template('home.html', fecha_actual=datetime.utcnow())
 
 #----------------------------------------------------------------------------------------------------------------------------------------#
 
