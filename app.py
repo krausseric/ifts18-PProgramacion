@@ -7,7 +7,10 @@ from flask_bootstrap import Bootstrap
 
 from forms import LoginForm, SaludarForm, RegistrarForm, ConsultaPais, ConsultaEdad, ConsultaFecha, AgregarCliente, AgregarProducto
 from wtforms import SelectField
+from app import app
 
+if __name__="__name__":
+    app.run()
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
